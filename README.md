@@ -29,8 +29,8 @@ AI-On-The-Edge-Cam: ESP32-S3 with PoE, SD, Camera
 |--------------|------------|----------|
 | GND | GND | Ground |
 | 3.3V | 3.3V | Power |
-| GPIO 00 | N/A | I2C SDA |
-| GPIO 01 | N/A | I2C SCL |
+| GPIO 00 | (D6)| I2C SDA |
+| GPIO 01 | (D7) | I2C SCL |
 | GPIO 03 | DIO1 | LoRa Interrupt |
 | GPIO 04 | BUSY | Busy Signal |
 | GPIO 05 | RST | Radio Reset |
