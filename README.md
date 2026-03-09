@@ -81,7 +81,7 @@ Compatible sensors include BME280, BME680, SSD1306 displays, etc.
 ### Method 1: Web Flasher (Easiest)
 1. Connect your HT-CT62 (Esp32-C3 + SX1262) devboard via USB
 2. Visit [Meshtastic Web Flasher](https://flasher.meshtastic.org/)
-3. Upload the `firmware-seeed-xiao-esp32c3-sx1262-2.7.19.9d06c1b.factory.bin` file
+3. Upload the `firmware-heltec_esp32c3-2.7.20.417ca86.factory.bin` file
 4. Follow the on-screen instructions
 
 ### Method 2: esptool.py
@@ -91,7 +91,7 @@ pip install esptool
 
 # Flash the firmware (adjust port as needed)
 esptool.py --chip esp32c3 --port /dev/ttyACM0 --baud 921600 \
-  write_flash 0x0 firmware/firmware-seeed-xiao-esp32c3-sx1262-2.7.19.9d06c1b.factory.bin
+  write_flash 0x0 firmware-heltec_esp32c3-2.7.20.417ca86.factory.bin
 ```
 
 **macOS**: Use `/dev/cu.usbmodem*` or `/dev/tty.usbmodem*`
@@ -99,7 +99,7 @@ esptool.py --chip esp32c3 --port /dev/ttyACM0 --baud 921600 \
 **Linux**: Use `/dev/ttyUSB0` or `/dev/ttyACM0`
 
 ### Method 3: PlatformIO (Advanced)
-Clone the source and build yourself - see build instructions in the PlatformIO wiki.
+Clone the variant files and build yourself - see build instructions in the VS Studio PlatformIO wiki.
 
 ## ⚙️ Configuration
 
@@ -120,13 +120,13 @@ After flashing:
 ## 🔧 Adding I2C Sensors (Optional)
 
 The module provide I2C connectivity:
-- **SDA**: GPIO00 (D0)
-- **SCL**: GPIO01 (D1)
+- **SDA**: GPIO00 (D6)
+- **SCL**: GPIO01 (D7)
 
 Compatible sensors:
 - BME280/BME680 (temperature, humidity, pressure)
 - SSD1306 OLED display (128x64)
-- Any I2C sensor at 3.3V
+- Any I2C sensor at 3.3V (expected payload: JSON format)
 
 Connect sensors to the pass-through pins and share 3.3V/GND.
 
@@ -164,9 +164,9 @@ Connect sensors to the pass-through pins and share 3.3V/GND.
 
 ## 📝 Firmware Details
 
-- **Version**: 2.7.19.9d06c1b
-- **Build Date**: 2026-02-31
-- **Hardware Model**: 254 (SEEED_XIAO_ESP32C3)
+- **Version**: 2.7.20.417ca86
+- **Build Date**: 2026-03-04
+- **Hardware Model**: 254 (HT-62CT)
 - **Radio**: SX1262 with DIO2 RF switching, 1.8V TCXO
 
 ## 🤝 Contributing
