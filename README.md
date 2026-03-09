@@ -70,7 +70,7 @@ The module has two 2.54mm header pinouts with 8 pins per side.
 | Pin 8 - SDA | Pin 00 GPIO 00 | I2C SDA |
 
 ### I2C Sensor Support
-GPIO 01 (D7) and GPIO 00 (D6) are available via the SX1262 pass-through pins D7 and D6 for external I2C sensors:
+GPIO 01 (D7) and GPIO 00 (D6) are available via the SX1262 pass-through pins D6 and D7 for external I2C sensors:
 - **SDA**: GPIO 00 (D6)
 - **SCL**: GPIO 01 (D7)
 
