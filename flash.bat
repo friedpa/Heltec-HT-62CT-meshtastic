@@ -21,8 +21,7 @@ echo [+] esptool.py found
 echo.
 
 REM Firmware file
-set FIRMWARE=firmware\firmware-heltec_esp32c3-2.7.20.417ca86.factory.bin
-
+set FIRMWARE=firmware-heltec_esp32c3-2.7.20.417ca86.factory.bin
 if not exist "%FIRMWARE%" (
     echo [X] Firmware file not found: %FIRMWARE%
     pause
