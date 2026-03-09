@@ -53,7 +53,7 @@ The module has two 2.54mm header pinouts with 8 pins per side.
 | Pin 4 - 3.3V | Pin 12 3.3V | Power |
 | Pin 5 - GND | Pin 02 GND | Ground |
 | Pin 6 - GND | Pin 13 GND | Ground |
-| Pin 7 - GND | PIN 21 GND | Ground |
+| Pin 7 - GND | Pin 21 GND | Ground |
 | Pin 8 - 5V | N/A | USB Typ C - Connector |
 
 ### Header H2
@@ -67,7 +67,7 @@ The module has two 2.54mm header pinouts with 8 pins per side.
 | Pin 5 - Not used |  |  |
 | Pin 6 - GPIO 02 | Pin 08 GPIO 02 |  |
 | Pin 7 - SCL | Pin 01 GPIO 01 | I2C SCL |
-| Pin 8 - SDA | Pim 00 GPIO 00 | I2C SDA |
+| Pin 8 - SDA | Pin 00 GPIO 00 | I2C SDA |
 
 ### I2C Sensor Support
 GPIO 01 (D7) and GPIO 00 (D6) are available via the SX1262 pass-through pins D7 and D6 for external I2C sensors:
