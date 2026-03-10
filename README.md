@@ -3,7 +3,8 @@
 ![image1](https://github.com/friedpa/seeed-xiao-esp32c3-meshtastic/blob/main/img/2025-08-22T16_43_20.347Z-top.jpg)
 
 
-Custom Meshtastic firmware for the **Lora-shuttle: HT-CT62 (ESP32-C3 + SX1262) devboard** Standalone or stacked configuration with a carrier board e.g. 
+Custom Meshtastic firmware for the 
+**LoRaWAN-Shuttle: HT-CT62 (ESP32-C3 + SX1262) devboard** Standalone or stacked configuration with a carrier board e.g. 
 AI-On-The-Edge-Cam: ESP32-S3 with PoE, SD, Camera
 
 ![Version](https://www.tindie.com/products/allexok/lora-shuttle-ht-ct62-esp32-c3-sx1262-devboard/)
