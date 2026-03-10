@@ -1,4 +1,4 @@
-# Meshtastic Firmware for Lora-shuttle: HT-CT62 (ESP32-C3 + SX1262) devboard
+# Meshtastic Firmware for LoRaWAN-Shuttle: HT-CT62 (ESP32-C3 + SX1262) devboard
 
 ![image1](https://github.com/friedpa/seeed-xiao-esp32c3-meshtastic/blob/main/img/2025-08-22T16_43_20.347Z-top.jpg)
 
