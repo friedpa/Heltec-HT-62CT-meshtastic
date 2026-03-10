@@ -24,7 +24,7 @@ AI-On-The-Edge-Cam: ESP32-S3 with PoE, SD, Camera
 
 ### Pin Mappings
 
-#### HT-62CT intern PIN mapping between ESP32-C3 and SX1262
+#### HT-CT62 intern PIN mapping between ESP32-C3 and SX1262
 
 | ESP32-C3 Pin | SX1262 Pin | Function |
 |--------------|------------|----------|
@@ -46,7 +46,7 @@ The module has two 2.54mm header pinouts with 8 pins per side.
 
 ### Header H1
 
-| Header | HT62-CT | Function |
+| Header | HT-CT62 | Function |
 |--------------|------------|----------|
 | Pin 1 - Not used |  |  |
 | Pin 2 - Not used |  |  |
@@ -59,7 +59,7 @@ The module has two 2.54mm header pinouts with 8 pins per side.
 
 ### Header H2
 
-| Header | HT62-CT | Function |
+| Header | HT-CT62 | Function |
 |--------------|------------|----------|
 | Pin 1 - RX | Pin 19 RXD | Data |
 | Pin 2 - TX | Pin 20 TXD | Data |
@@ -100,7 +100,7 @@ esptool.py --chip esp32c3 --port /dev/ttyACM0 --baud 921600 \
 **Linux**: Use `/dev/ttyUSB0` or `/dev/ttyACM0`
 
 ### Method 3: PlatformIO (Advanced)
-Clone the variant files and build yourself - see build instructions in the VS Studio PlatformIO wiki.
+Clone the "variant" files and build yourself - see build instructions in the VS Studio PlatformIO wiki.
 
 ## ⚙️ Configuration
 
@@ -114,7 +114,7 @@ After flashing:
 
 - ✅ **Full Meshtastic support** - Messaging, position sharing, telemetry
 - ✅ **SX1262 LoRa radio** - Long range mesh networking
-- ✅ **I2C sensor support** - GPIO04/05 available for BME280, OLED displays, etc.
+- ✅ **I2C sensor support** - GPIO00/01 available for BME280, OLED displays, etc.
 - ✅ **Compact form factor** - Stackable design
 - ✅ **Low power consumption** - Perfect for portable nodes
 
@@ -143,7 +143,7 @@ Connect sensors to the pass-through pins and share 3.3V/GND.
 ## 🐛 Troubleshooting
 
 **"Error no LoRa TX/RX possible"**
-- Ensure antenna is connected to the HT-62CT
+- Ensure antenna is connected to the HT-CT62
 - Check power pins or USB-C Connetor are aligned/ connected correctly
 
 **No nodes appear**
@@ -167,7 +167,7 @@ Connect sensors to the pass-through pins and share 3.3V/GND.
 
 - **Version**: 2.7.20.417ca86
 - **Build Date**: 2026-03-04
-- **Hardware Model**: 254 (HT-62CT)
+- **Hardware Model**: 254 (HT-CT62)
 - **Radio**: SX1262 with DIO2 RF switching, 1.8V TCXO
 
 ## 🤝 Contributing
@@ -181,8 +181,8 @@ This firmware is based on [Meshtastic](https://github.com/meshtastic/firmware) (
 ## 🙏 Credits
 
 - [Meshtastic Project](https://meshtastic.org/) - Open source mesh networking
-- [Heltec](https://heltec.org/project/ht-ct62/) - HT-62CT hardware
-- [Prokyber](hhttps://www.tindie.com/products/allexok/lora-shuttle-ht-ct62-esp32-c3-sx1262-devboard) - Lora-shuttle: HT-CT62 (Esp32-C3 + SX1262) devboard
+- [Heltec](https://heltec.org/project/ht-ct62/) - HT-CT62 hardware
+- [Prokyber](hhttps://www.tindie.com/products/allexok/lora-shuttle-ht-ct62-esp32-c3-sx1262-devboard) - LoRaWAN-Shuttle: HT-CT62 (Esp32-C3 + SX1262) devboard
 - Community contributors and testers
 
 ---
